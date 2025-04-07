@@ -1,0 +1,1 @@
+NEWS_API_KEY = '5fdb8ba613294854bd877f81b21e62d8'  # Replace with your actual News API key

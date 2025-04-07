@@ -1,0 +1,139 @@
+// This is a SCSS file that defines the styles for the application.
+// It uses variables for colors, fonts, and other properties to maintain consistency across the application.
+
+$primary-color: #ff7300;
+$secondary-color: #1c33cb;
+$success-color: #ffffffd9;
+$text-color: #212529;
+$background-color: #efdea5;
+$border-color: #dee2e6;
+$font-family: "Helvetica", Helvetica, Arial, sans-serif;
+$font-family-main: "Papyrus", Helvetica, Arial, sans-serif;
+
+
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: $primary-color;
+  padding: 20px 15px;
+  color: white;
+  font-family: $font-family-main;
+  font-weight: bold;
+
+.navbar-brand {
+    color: white;
+    font-size: 2rem;
+   
+  }
+
+  .navbar-nav .nav-link {
+    color: $text-color;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: darken($success-color, 10%);
+    text-decoration: underline;
+  }
+  .navbar-toggler {
+    border-color: rgb(255,255, 255, 0.5);
+  }
+
+
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+//   font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: $primary-color;
+  text-align: center;
+  font-family: $font-family-main;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+#search-btn{
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($primary-color, 15%);
+    }
+}
+
+}
+
+.news-article {
+  background-color: white;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+h5{
+    margin: 0;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    font-weight: 500px;
+    font-family: $font-family;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+p{
+    padding: 15px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+}
